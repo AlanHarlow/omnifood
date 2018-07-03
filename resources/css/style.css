@@ -223,7 +223,7 @@ header {
     float: left;
     margin: 5px 0;
 }
-}
+
 /* Main navi */
 .main-nav {
     float: right;
@@ -232,10 +232,8 @@ header {
 }
 
 .main-nav li {
-    float: right;
     display: inline-block;
-    margin-left: 40px;
-    margin-top: 55px;
+    margin-left: 70px;
 }
 
 .main-nav li a:link,
@@ -255,6 +253,19 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -266,11 +277,14 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav li { margin-top: 18px;}
+.sticky .main-nav li {
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 18px 0;
+    padding: 6px 0;
     color: #555;
 }
 
